@@ -1,0 +1,14 @@
+
+@startuml
+class Celular {
+    - nroTel : str
+    - dueno : str
+    - espacio : int
+    - ram : int
+    - nroApp : int
+    + __init__(nroTel, dueno, espacio, ram, nroApp)
+    + __pos__() : Celular
+    + __neg__() : Celular
+    + mostrar()
+}
+@enduml

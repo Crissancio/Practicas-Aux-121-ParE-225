@@ -1,0 +1,13 @@
+@startuml
+class Persona {
+  - nombre : String
+  - paterno : String
+  - materno : String
+  - edad : int
+  - ci : String
+  + Persona(nombre,paterno,materno,edad,ci)
+  + mostrarDatos() : String
+  + mayorDeEdad() : boolean
+  + modificarEdad(nuevo)
+}
+@enduml

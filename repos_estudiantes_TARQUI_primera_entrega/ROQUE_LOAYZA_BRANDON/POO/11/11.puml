@@ -1,0 +1,21 @@
+@startuml
+class Cliente {
+  - nombre : String
+  - mesa : int
+  + Cliente(nombre, mesa)
+  + get_nombre() : String
+  + set_nombre(nombre)
+  + get_mesa() : int
+  + set_mesa(mesa)
+}
+class Pedido {
+  - id_pedido : int
+  - productos : List
+  - estado : String
+  + Pedido(id_pedido, productos, estado)
+  + get_id() : int
+  + get_productos() : List
+  + get_estado() : String
+  + set_estado(estado)
+}
+@enduml

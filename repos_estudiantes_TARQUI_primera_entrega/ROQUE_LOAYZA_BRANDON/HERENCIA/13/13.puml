@@ -1,0 +1,23 @@
+
+@startuml
+class Empleado {
+    - nombre : str
+    - sueldo : float
+    - horasExtra : int
+    - propina : float
+    + __init__(nombre, sueldo, horasExtra, propina)
+    + sueldoTotal() : float
+}
+
+class Chef
+class Mesero {
+    + sueldoTotal() : float
+}
+class Administrativo {
+    + sueldoTotal() : float
+}
+
+Empleado <|-- Chef
+Empleado <|-- Mesero
+Empleado <|-- Administrativo
+@enduml

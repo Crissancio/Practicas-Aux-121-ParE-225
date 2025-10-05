@@ -1,0 +1,9 @@
+@startuml
+class Mascota {
+  - nombre : String
+  - energia : int
+  + Mascota(nombre, energia=50)
+  + alimentar() : int
+  + jugar() : int
+}
+@enduml

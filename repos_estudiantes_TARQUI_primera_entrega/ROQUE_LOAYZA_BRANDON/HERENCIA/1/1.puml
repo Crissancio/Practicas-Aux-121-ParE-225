@@ -1,0 +1,16 @@
+
+@startuml
+class Persona {
+    - nombre : str
+    - edad : int
+    + __init__(nombre, edad)
+}
+
+class Estudiante {
+    - carrera : str
+    + __init__(nombre, edad, carrera)
+    + mostrar()
+}
+
+Persona <|-- Estudiante
+@enduml

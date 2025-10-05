@@ -1,0 +1,28 @@
+
+@startuml
+class Nadador {
+    - estiloNatacion : str
+    + __init__(estiloNatacion)
+    + nadar()
+}
+
+class Ciclista {
+    - tipoBicicleta : str
+    + __init__(tipoBicicleta)
+    + pedalear()
+}
+
+class Corredor {
+    - distanciaPreferida : int
+    + __init__(distanciaPreferida)
+    + correr()
+}
+
+class Triatleta {
+    + __init__(estilo, tipo, distancia)
+}
+
+Nadador <|-- Triatleta
+Ciclista <|-- Triatleta
+Corredor <|-- Triatleta
+@enduml

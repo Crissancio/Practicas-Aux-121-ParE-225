@@ -1,0 +1,22 @@
+
+@startuml
+class Politico {
+    - profesion : str
+    - aniosExp : int
+}
+
+class Partido {
+    - nombreP : str
+    - rol : str
+}
+
+class Presidente {
+    - nombre : str
+    - apellido : str
+    + __init__(nombre, apellido, profesion, aniosExp, nombreP, rol)
+    + mostrar()
+}
+
+Politico <|-- Presidente
+Partido <|-- Presidente
+@enduml

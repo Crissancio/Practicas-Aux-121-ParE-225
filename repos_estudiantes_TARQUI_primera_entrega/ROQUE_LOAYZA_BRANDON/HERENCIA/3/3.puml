@@ -1,0 +1,23 @@
+
+@startuml
+class Animal {
+    - nombre : str
+    - edad : int
+    + __init__(nombre, edad)
+    + desplazarse()
+}
+
+class Leon {
+    + desplazarse()
+}
+class Pinguino {
+    + desplazarse()
+}
+class Canguro {
+    + desplazarse()
+}
+
+Animal <|-- Leon
+Animal <|-- Pinguino
+Animal <|-- Canguro
+@enduml

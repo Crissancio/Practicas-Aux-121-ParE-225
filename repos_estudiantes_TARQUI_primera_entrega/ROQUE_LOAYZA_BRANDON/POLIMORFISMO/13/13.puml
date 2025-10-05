@@ -1,0 +1,12 @@
+
+@startuml
+class MP4 {
+    - canciones : list
+    - videos : list
+    + __init__()
+    + borrarCancion(nombre, artista, peso)
+    + __add__(cancion)
+    + __sub__(video)
+    + capacidad()
+}
+@enduml

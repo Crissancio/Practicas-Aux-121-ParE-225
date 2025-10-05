@@ -1,0 +1,16 @@
+
+@startuml
+class Vehiculo {
+    - placa : str
+    - conductor : str
+    + __init__(placa, conductor)
+    + mostrar()
+    + cambiarConductor(nuevo)
+}
+
+class Auto
+class Moto
+
+Vehiculo <|-- Auto
+Vehiculo <|-- Moto
+@enduml

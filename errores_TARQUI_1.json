@@ -1,0 +1,58 @@
+[
+  {
+    "paterno": "JAMACHI",
+    "materno": "CONDORI",
+    "nombre": "ALEX ARTURO",
+    "enlace": "github.com/AlexJamachi/Practica-General-de-Auxiliatura-INF-121",
+    "error_msg": "Cmd('git') failed due to: exit code(128)\n  cmdline: git clone -v -- github.com/AlexJamachi/Practica-General-de-Auxiliatura-INF-121 repos_estudiantes_TARQUI_primera_entrega/JAMACHI_CONDORI_ALEX_ARTURO\n  stderr: 'fatal: repository 'github.com/AlexJamachi/Practica-General-de-Auxiliatura-INF-121' does not exist\n'"
+  },
+  {
+    "paterno": "LOPEZ",
+    "materno": "PARI",
+    "nombre": "CRISTIAN JOSUA",
+    "enlace": "github.com/Cristianlopjosue/Practica-auxiliatura-PROGRAMACION-II",
+    "error_msg": "Cmd('git') failed due to: exit code(128)\n  cmdline: git clone -v -- github.com/Cristianlopjosue/Practica-auxiliatura-PROGRAMACION-II repos_estudiantes_TARQUI_primera_entrega/LOPEZ_PARI_CRISTIAN_JOSUA\n  stderr: 'fatal: repository 'github.com/Cristianlopjosue/Practica-auxiliatura-PROGRAMACION-II' does not exist\n'"
+  },
+  {
+    "paterno": "MANCILLA",
+    "materno": "CHUQUIMIA",
+    "nombre": "MISAEL VICTOR",
+    "enlace": "github.com/Misael555/Auxiliatura_Programacion_2",
+    "error_msg": "Cmd('git') failed due to: exit code(128)\n  cmdline: git clone -v -- github.com/Misael555/Auxiliatura_Programacion_2 repos_estudiantes_TARQUI_primera_entrega/MANCILLA_CHUQUIMIA_MISAEL_VICTOR\n  stderr: 'fatal: repository 'github.com/Misael555/Auxiliatura_Programacion_2' does not exist\n'"
+  },
+  {
+    "paterno": "MORALES",
+    "materno": "CRUZ",
+    "nombre": "CARLOS ANGEL",
+    "enlace": "github.com/heicar08/Practicas-INF-121",
+    "error_msg": "Cmd('git') failed due to: exit code(128)\n  cmdline: git clone -v -- github.com/heicar08/Practicas-INF-121 repos_estudiantes_TARQUI_primera_entrega/MORALES_CRUZ_CARLOS_ANGEL\n  stderr: 'fatal: repository 'github.com/heicar08/Practicas-INF-121' does not exist\n'"
+  },
+  {
+    "paterno": "PONGO",
+    "materno": "GAVINCHA",
+    "nombre": "JHONATAN",
+    "enlace": "github.com/Jhonatan-Gavincha/PRACTICA-I---AUXILIATURA",
+    "error_msg": "Cmd('git') failed due to: exit code(128)\n  cmdline: git clone -v -- github.com/Jhonatan-Gavincha/PRACTICA-I---AUXILIATURA repos_estudiantes_TARQUI_primera_entrega/PONGO_GAVINCHA_JHONATAN\n  stderr: 'fatal: repository 'github.com/Jhonatan-Gavincha/PRACTICA-I---AUXILIATURA' does not exist\n'"
+  },
+  {
+    "paterno": "SARAVIA",
+    "materno": "APAZA",
+    "nombre": "GABRIEL ANGEL",
+    "enlace": "github.com/gabriel12-s/Pr-cticas-aux-INF121",
+    "error_msg": "Cmd('git') failed due to: exit code(128)\n  cmdline: git clone -v -- github.com/gabriel12-s/Pr-cticas-aux-INF121 repos_estudiantes_TARQUI_primera_entrega/SARAVIA_APAZA_GABRIEL_ANGEL\n  stderr: 'fatal: repository 'github.com/gabriel12-s/Pr-cticas-aux-INF121' does not exist\n'"
+  },
+  {
+    "paterno": "ULO",
+    "materno": "POMA",
+    "nombre": "LUIS FERNANDO",
+    "enlace": "github.com/Doghymen/Practica-1-INF-121",
+    "error_msg": "Cmd('git') failed due to: exit code(128)\n  cmdline: git clone -v -- github.com/Doghymen/Practica-1-INF-121 repos_estudiantes_TARQUI_primera_entrega/ULO_POMA_LUIS_FERNANDO\n  stderr: 'fatal: repository 'github.com/Doghymen/Practica-1-INF-121' does not exist\n'"
+  },
+  {
+    "paterno": "VINO",
+    "materno": "CASTAÑETA",
+    "nombre": "YHAMIL EDDY",
+    "enlace": "github.com/yhamil-18/Practica-De-Programacion",
+    "error_msg": "Cmd('git') failed due to: exit code(128)\n  cmdline: git clone -v -- github.com/yhamil-18/Practica-De-Programacion repos_estudiantes_TARQUI_primera_entrega/VINO_CASTAÑETA_YHAMIL_EDDY\n  stderr: 'fatal: repository 'github.com/yhamil-18/Practica-De-Programacion' does not exist\n'"
+  }
+]

@@ -1,0 +1,24 @@
+
+@startuml
+class Ordenador {
+    - codigo : str
+    - numero : int
+    - ram : int
+    - procesador : str
+    - estado : str
+    + __init__(codigo, numero, ram, procesador, estado)
+    + mostrar()
+}
+
+class Laboratorio {
+    - nombre : str
+    - capacidad : int
+    - ordenadores : list
+    + __init__(nombre, capacidad)
+    + agregar(o)
+    + informacion(tipo)
+    + mover(destino)
+}
+
+Laboratorio "1" *-- "many" Ordenador
+@enduml

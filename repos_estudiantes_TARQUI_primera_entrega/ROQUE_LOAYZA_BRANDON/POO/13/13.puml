@@ -1,0 +1,11 @@
+@startuml
+class Fruta {
+  - nombre : String
+  - tipo : String
+  - vitaminas : List
+  + Fruta(nombre,tipo,vitaminas)
+  + desde_cadena(nombre,tipo,cadena_vit) : Fruta
+  + agregar_vitamina(v)
+  + nro_vitaminas() : int
+}
+@enduml

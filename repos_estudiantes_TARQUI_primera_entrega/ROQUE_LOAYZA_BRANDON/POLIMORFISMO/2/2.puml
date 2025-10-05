@@ -1,0 +1,12 @@
+@startuml
+class Videojuego {
+    - nombre : str
+    - plataforma : str
+    - cantidadJugadores : int
+    + __init__(nombre, plataforma, cantidadJugadores)
+    + crear_con_nombre(nombre)
+    + crear_completo(nombre, plataforma, cantidad)
+    + agregarJugadores(cantidad)
+    + mostrar()
+}
+@enduml

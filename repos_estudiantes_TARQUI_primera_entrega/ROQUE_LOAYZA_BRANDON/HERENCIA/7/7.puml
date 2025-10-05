@@ -1,0 +1,21 @@
+
+@startuml
+class Persona {
+    - nombre : str
+    - edad : int
+    + __init__(nombre, edad)
+    + mostrar()
+}
+
+class Estudiante {
+    + modificarEdad(nueva)
+}
+
+class Docente {
+    - materia : str
+    + __init__(nombre, edad, materia)
+}
+
+Persona <|-- Estudiante
+Persona <|-- Docente
+@enduml

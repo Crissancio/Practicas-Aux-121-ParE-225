@@ -1,0 +1,9 @@
+@startuml
+class Producto {
+  - nombre : String
+  - precio : double
+  - stock : int
+  + vender(cantidad : int) : boolean
+  + reabastecer(cantidad : int) : boolean
+}
+@enduml

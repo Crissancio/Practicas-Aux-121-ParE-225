@@ -1,0 +1,19 @@
+@startuml
+class Carta {
+  - codigo : String
+  - remitente : String
+  - destinatario : String
+  - descripcion : String
+  + Carta(codigo, remitente, destinatario, descripcion)
+}
+class Buzon {
+  - nro : int
+  - cartas : List
+  + Buzon(nro)
+  + adicionar_carta(carta)
+  + contar_por_destinatario(nombre) : int
+  + eliminar_por_codigo(codigo) : boolean
+  + buscar_palabra(palabra) : List
+}
+Buzon "1" *-- "0..*" Carta
+@enduml

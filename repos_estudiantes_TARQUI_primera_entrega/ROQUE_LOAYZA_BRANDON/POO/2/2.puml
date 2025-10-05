@@ -1,0 +1,10 @@
+@startuml
+class Bus {
+  - capacidad : int
+  - pasajeros : int
+  - recaudacion : double
+  + subir(cantidad : int) : int
+  + cobrarPasaje() : double
+  + asientosDisponibles() : int
+}
+@enduml

@@ -1,0 +1,11 @@
+
+@startuml
+class Matriz {
+    - datos : list
+    + __init__(datos)
+    + sumar(otra) : Matriz
+    + restar(otra) : Matriz
+    + igual(otra) : bool
+    + mostrar()
+}
+@enduml

@@ -1,0 +1,23 @@
+
+@startuml
+class Pasajero {
+    - nombre : str
+    - habitacion : int
+    - costo : float
+    - genero : str
+    + __init__(nombre, habitacion, costo, genero)
+}
+
+class Crucero {
+    - nombre : str
+    - pasajeros : list
+    + __init__(nombre, pasajeros)
+    + __pos__()
+    + __neg__()
+    + __eq__(otro)
+    + __add__(otro)
+    + __sub__(otro)
+}
+
+Crucero "1" *-- "many" Pasajero
+@enduml

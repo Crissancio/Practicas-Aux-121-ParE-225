@@ -1,0 +1,12 @@
+
+@startuml
+class Sistema {
+    - nombre : str
+    - admins : list
+    - autos : list
+    + __init__(nombre, admins, autos)
+    + mostrar()
+    + adicionar(x)
+    + adicionar2(x, y, z)
+}
+@enduml

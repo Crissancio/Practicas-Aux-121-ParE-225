@@ -1,0 +1,24 @@
+
+@startuml
+class Persona {
+    - nombre : str
+    - ci : int
+}
+
+class Empleado {
+    - sueldo : float
+}
+
+class Policia {
+    - grado : str
+}
+
+class JefePolicia {
+    + __init__(nombre, ci, sueldo, grado)
+    + mostrar()
+}
+
+Persona <|-- JefePolicia
+Empleado <|-- JefePolicia
+Policia <|-- JefePolicia
+@enduml
