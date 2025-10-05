@@ -4,7 +4,7 @@ import json
 from git import Repo, GitCommandError
 
 # Ruta del archivo CSV
-ruta_csv = "estudiantes_tercera_entrega.csv"
+ruta_csv = "estudiantes_primera_entrega.csv"
 
 # Leer el CSV
 df = pd.read_csv(ruta_csv)

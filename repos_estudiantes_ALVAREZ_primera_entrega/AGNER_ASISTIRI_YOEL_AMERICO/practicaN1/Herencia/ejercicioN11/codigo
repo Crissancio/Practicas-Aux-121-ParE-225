@@ -1,0 +1,52 @@
+class Politico:
+    def __init__(self, profesion, añosExp):
+        self.profesion = profesion
+        self.añosExp = añosExp
+
+    def mostrar_profesion(self):
+        return f"Profesión: {self.profesion}, años de experiencia: {self.añosExp}"
+
+
+class Partido:
+    def __init__(self, nombreP, rol):
+        self.nombreP = nombreP
+        self.rol = rol
+
+    def mostrar_partido(self):
+        return f"Partido: {self.nombreP}, Rol: {self.rol}"
+
+
+class Presidente(Politico, Partido):
+    def __init__(self, nombre, apellido, profesion, añosExp, partido):
+        Politico.__init__(self, profesion, añosExp)  
+        Partido.__init__(self, partido.nombreP, partido.rol)  
+        self.nombre = nombre
+        self.apellido = apellido
+        self.partido = partido  
+
+    def mostrar_presidente(self):
+        return (f"Presidente: {self.nombre} {self.apellido}\n" +
+                self.mostrar_profesion() + "\n" +
+                self.mostrar_partido())
+
+
+
+
+partido1 = Partido("Partido Liberal", "Gobierno")
+partido2 = Partido("Partido Socialista", "Oposición")
+partido3 = Partido("Partido Verde", "Independiente")
+
+
+presidente1 = Presidente("Juan", "Pérez", "Abogado", 15, partido1)
+presidente2 = Presidente("Ana", "López", "Economista", 20, partido2)
+presidente3 = Presidente("Carlos", "González", "Ingeniero", 10, partido3)
+
+
+presidentes = [presidente1, presidente2, presidente3]
+
+
+nombre_buscado = "Carlos"
+for presidente in presidentes:
+    if presidente.nombre == nombre_buscado:
+        print(presidente.mostrar_presidente())
+        break

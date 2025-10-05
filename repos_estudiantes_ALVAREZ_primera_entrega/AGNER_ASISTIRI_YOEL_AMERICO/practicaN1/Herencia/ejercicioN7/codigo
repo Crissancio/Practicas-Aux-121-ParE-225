@@ -1,0 +1,63 @@
+class Persona:
+    def __init__(self, nombre, paterno, materno, edad):
+        self.nombre = nombre
+        self.paterno = paterno
+        self.materno = materno
+        self.edad = edad
+    
+    def mostrar(self):
+        return f"Nombre: {self.nombre} {self.paterno} {self.materno}, Edad: {self.edad}"
+    
+    def modificarEdad(self, nueva_edad):
+        self.edad = nueva_edad
+        return f"La nueva edad de {self.nombre} es {self.edad}"
+
+
+class Docente(Persona):
+    def __init__(self, nombre, paterno, materno, edad, sueldo, regProfesional):
+        super().__init__(nombre, paterno, materno, edad)
+        self.sueldo = sueldo
+        self.regProfesional = regProfesional
+    
+    def mostrar(self):
+        return f"Docente: {self.nombre} {self.paterno} {self.materno}, Edad: {self.edad}, Sueldo: {self.sueldo}, Registro Profesional: {self.regProfesional}"
+
+
+
+class Estudiante(Persona):
+    def __init__(self, nombre, paterno, materno, edad, ru, matricula):
+        super().__init__(nombre, paterno, materno, edad)
+        self.ru = ru
+        self.matricula = matricula
+    
+    def mostrar(self):
+        return f"Estudiante: {self.nombre} {self.paterno} {self.materno}, Edad: {self.edad}, RU: {self.ru}, Matrícula: {self.matricula}"
+
+
+def promedio(estudiantes):
+    total_edad = sum([estudiante.edad for estudiante in estudiantes])
+    return total_edad / len(estudiantes)
+
+
+estudiante1 = Estudiante("americp", "agner", "asistiri", 19, "ru1878011", "123456")
+estudiante2 = Estudiante("ana", "lopez", "nez", 22, "ru67890", "654321")
+docente = Docente("carlos", "sanchez", "torres", 40, 3500, "12345")
+
+
+print(estudiante1.mostrar())
+print(estudiante2.mostrar())
+print(docente.mostrar())
+
+
+estudiantes = [estudiante1, estudiante2]
+print(f"Promedio de edades de los estudiantes: {promedio(estudiantes)}")
+
+
+estudiante1.modificarEdad(21)
+print(estudiante1.mostrar())
+
+
+if any(estudiante.edad == docente.edad for estudiante in estudiantes):
+    print("un estudiante tienen la misma edad que el doc.")
+else:
+    print("nin estudiante tiene la misma edad qu el doc.")

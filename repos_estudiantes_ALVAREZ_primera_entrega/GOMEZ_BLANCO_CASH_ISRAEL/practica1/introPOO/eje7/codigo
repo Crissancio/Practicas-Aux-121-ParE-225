@@ -1,0 +1,40 @@
+class Mascota:
+    def __init__(self, nombre, tipo, energia):
+        self.nombre = nombre
+        self.tipo = tipo
+        self.energia = energia
+
+
+    def alimentar(self):
+        self.energia = 20+self.energia
+        if self.energia > 100:
+            self.energia = 100
+        print(f"{self.nombre} ha sido alimentada. Energía actual: {self.energia}")
+
+    
+    def jugar(self):
+        self.energia = 15-self.energia
+        if self.energia < 0:
+            self.energia = 0
+        print(f"{self.nombre} jug hergia actual: {self.energia}")
+
+    
+    def mostrarEnergia(self):
+        print(f"Energía de {self.nombre}: {self.energia}")
+
+
+
+mascota1 = Mascota("chavela", "Perro", 50)
+mascota2 = Mascota("aton", "Gato", 70)
+
+
+mascota1.alimentar()
+mascota2.alimentar()
+
+
+mascota1.jugar()
+mascota2.jugar()
+
+
+mascota1.mostrarEnergia()
+mascota2.mostrarEnergia()

@@ -1,0 +1,46 @@
+class Parada:
+    def __init__(self, nombreP="Parada Sin Nombre"):
+        self.nombreP = nombreP
+        self.admins = [None] * 10
+        self.autos = [[None, None, None]] * 10
+
+    def mostrar(self):
+        print(f"Nombre de la parada: {self.nombreP}")
+        print("Admins:")
+        for admin in self.admins:
+            if admin is not None:
+                print(admin)
+        print("Autos:")
+        for auto in self.autos:
+            if auto[0] is not None:
+                print(f"Modelo: {auto[0]}, Conductor: {auto[1]}, Placa: {auto[2]}")
+
+    def adicionar(self, *args):
+        if len(args) == 1:  
+            admin = args[0]
+            for i in range(len(self.admins)):
+                if self.admins[i] is None:
+                    self.admins[i] = admin
+                    break
+        elif len(args) == 3:  
+            modelo, conductor, placa = args
+            for i in range(len(self.autos)):
+                if self.autos[i][0] is None:
+                    self.autos[i] = [modelo, conductor, placa]
+                    break
+
+
+
+parada = Parada()
+parada.mostrar() 
+
+parada2 = Parada("Parada Central")
+parada2.mostrar()
+
+parada2.adicionar("Admin1")
+parada2.adicionar("Admin2")
+
+parada2.adicionar("Modelo1", "Conductor1", "Placa1")
+parada2.adicionar("Modelo2", "Conductor2", "Placa2")
+
+parada2.mostrar()  

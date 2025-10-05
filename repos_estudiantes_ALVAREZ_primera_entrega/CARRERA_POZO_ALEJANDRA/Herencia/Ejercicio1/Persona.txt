@@ -1,0 +1,5 @@
+Falta de encapsulación.-Los atributos deben ir con símbolo “–” y los métodos con “+”.Usar visibilidad correctamente: “–” privado, “+” público.  
+Duplicación de atributos.-`nombre` y `ci` se repiten en las subclases.Deben heredarse de `Persona`.                                      
+Nombre del método genérico.-`method(type): type` no describe funcionalidad real.Cambiarlo por un método concreto como `mostrarInfo()`.             
+Inconsistencia en tipos.-Tipos de datos no están claros ni consistentes.Especificar tipo de cada atributo.                                 
+Falta de relación de herencia explícita.-En algunos diagramas, no estaba claro si era herencia o composición.  Usar flecha de **herencia (triángulo vacío)** hacia la clase base. 

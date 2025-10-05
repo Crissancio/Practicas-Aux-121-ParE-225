@@ -1,0 +1,85 @@
+// Clase base Persona
+public class Persona {
+    protected String nombre;
+    protected String apellido;
+    protected int ci;
+
+    public Persona(String nombre, String apellido, int ci) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.ci = ci;
+    }
+
+    public void metodo() {
+
+        System.out.println("persona");
+    }
+
+    @Override
+    public String toString() {
+        return "nom: " + nombre + " " + apellido + ", CI: " + ci;
+    }
+}
+
+
+
+
+class Cliente extends Persona {
+    private String nroCompra;
+    private String idCliente;
+
+    public Cliente(String nombre, String apellido, int ci, String nroCompra, String idCliente) {
+        super(nombre, apellido, ci);
+        this.nroCompra = nroCompra;
+        this.idCliente = idCliente;
+    }
+
+    @Override
+    public void metodo() {
+        System.out.println("Método de Cliente");
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", Nro Compra: " + nroCompra + ", ID Cliente: " + idCliente;
+    }
+}
+
+
+class Jefe extends Persona {
+    private String sucursal;
+    private String tipo;
+
+    public Jefe(String nombre, String apellido, int ci, String sucursal, String tipo) {
+        super(nombre, apellido, ci);
+        this.sucursal = sucursal;
+        this.tipo = tipo;
+    }
+
+    @Override
+    public void metodo() {
+        System.out.println("Método de Jefe");
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", Sucursal: " + sucursal + ", Tipo: " + tipo;
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+
+        Cliente cliente1 = new Cliente("americo", "agner", 13553236, "001", "C123");
+
+        Jefe jefe1 = new Jefe("yoel", "see", 7654321, "A", "gerente");
+
+        System.out.println(cliente1);
+        System.out.println(jefe1);
+
+
+        cliente1.metodo();
+        jefe1.metodo();
+    }
+}

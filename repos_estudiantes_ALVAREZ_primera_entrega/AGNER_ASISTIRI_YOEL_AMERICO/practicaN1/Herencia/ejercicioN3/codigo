@@ -1,0 +1,75 @@
+public class Animal {
+    protected String nombre;
+    protected int edad;
+
+    // Constructor de la clase base
+    public Animal(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+
+
+    public void desplazarse() {
+        System.out.println("El animal se desplaza.");
+    }
+
+    @Override
+    public String toString() {
+        return "Nombre: " + nombre + ", Edad: " + edad;
+    }
+}
+
+class Leon extends Animal {
+    public Leon(String nombre, int edad) {
+        super(nombre, edad);
+    }
+
+    @Override
+    public void desplazarse() {
+        System.out.println(nombre + " camina majestuosamente.");
+    }
+}
+
+
+class Pinguino extends Animal {
+    public Pinguino(String nombre, int edad) {
+        super(nombre, edad);
+    }
+
+    @Override
+    public void desplazarse() {
+        System.out.println(nombre + " nada en el agua.");
+    }
+}
+
+
+class Canguro extends Animal {
+    public Canguro(String nombre, int edad) {
+        super(nombre, edad);
+    }
+
+    @Override
+    public void desplazarse() {
+        System.out.println(nombre + " salta por el terreno.");
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        // Crear un arreglo de animales
+        Animal[] animales = new Animal[3];
+
+        // Crear instancias de cada subclase y asignarlas al arreglo
+        animales[0] = new Leon("Simba", 5);
+        animales[1] = new Pinguino("Pingu", 3);
+        animales[2] = new Canguro("Kangy", 4);
+        
+        for (Animal animal : animales) {
+            System.out.println(animal);
+            animal.desplazarse();
+        }
+    }
+}
+
+

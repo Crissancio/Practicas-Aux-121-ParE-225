@@ -1,0 +1,103 @@
+class Ordenador:
+    def __init__(self, codigo_serial, numero, ram, procesador, estado):
+        self.codigo_serial = codigo_serial
+        self.numero = numero
+        self.ram = ram
+        self.procesador = procesador
+        self.estado = estado
+
+    def __str__(self):
+        return f"Ordenador {self.numero} - {self.procesador} - {self.ram}GB RAM - Estado: {self.estado}"
+
+class Laboratorio:
+    def __init__(self, nombre, capacidad):
+        self.nombre = nombre
+        self.capacidad = capacidad
+        self.ordenadores = []
+
+    def agregar_ordenador(self, ordenador):
+        if len(self.ordenadores) < self.capacidad:
+            self.ordenadores.append(ordenador)
+        else:
+            print(f"No se pueden agregar más ordenadores a {self.nombre}. Capacidad máxima alcanzada.")
+
+    def informacion(self, estado=None, laboratorio=None, ram_min=None):
+        if estado:
+            print(f"Ordenadores con estado {estado}:")
+            for ordenador in self.ordenadores:
+                if ordenador.estado == estado:
+                    print(ordenador)
+
+        if laboratorio:
+            print(f"Ordenadores en {laboratorio}:")
+            for ordenador in self.ordenadores:
+                if laboratorio in self.nombre:
+                    print(ordenador)
+
+        if ram_min:
+            print(f"Ordenadores con más de {ram_min}GB de RAM:")
+            for ordenador in self.ordenadores:
+                if ordenador.ram > ram_min:
+                    print(ordenador)
+
+    def trasladar_ordenadores(self, laboratorio_destino, cantidad):
+        if cantidad > len(self.ordenadores):
+            print(f"No hay suficientes ordenadores para trasladar. Solo hay {len(self.ordenadores)}.")
+            return
+        print(f"\nAntes del traslado de {self.nombre} a {laboratorio_destino.nombre}:")
+        print(f"Ordenadores en {self.nombre}:")
+        for ordenador in self.ordenadores:
+            print(ordenador)
+
+        ordenadores_trasladados = self.ordenadores[:cantidad]
+        self.ordenadores = self.ordenadores[cantidad:]
+
+        print(f"\nDespués del traslado de {self.nombre} a {laboratorio_destino.nombre}:")
+        print(f"Ordenadores en {self.nombre}:")
+        for ordenador in self.ordenadores:
+            print(ordenador)
+
+        for ordenador in ordenadores_trasladados:
+            laboratorio_destino.agregar_ordenador(ordenador)
+
+        print(f"\nOrdenadores en {laboratorio_destino.nombre}:")
+        for ordenador in laboratorio_destino.ordenadores:
+            print(ordenador)
+
+
+
+
+lasin1 = Laboratorio("Lasin 1", 3)
+lasin2 = Laboratorio("Lasin 2", 3)
+
+
+ordenador1 = Ordenador("S1", 101, 8, "Intel i5", "activo")
+ordenador2 = Ordenador("S2", 102, 16, "Intel i7", "inactivo")
+ordenador3 = Ordenador("S3", 103, 4, "AMD Ryzen 5", "activo")
+ordenador4 = Ordenador("S4", 104, 8, "Intel i3", "activo")
+ordenador5 = Ordenador("S5", 105, 16, "Intel i5", "inactivo")
+ordenador6 = Ordenador("S6", 106, 32, "Intel i9", "activo")
+
+
+
+lasin1.agregar_ordenador(ordenador1)
+lasin1.agregar_ordenador(ordenador2)
+lasin1.agregar_ordenador(ordenador3)
+
+lasin2.agregar_ordenador(ordenador4)
+lasin2.agregar_ordenador(ordenador5)
+lasin2.agregar_ordenador(ordenador6)
+
+
+
+print("\nen Lasin 1:")
+lasin1.informacion(estado="activo")
+
+print("\nen Lasin 2:")
+lasin2.informacion(laboratorio="Lasin 2")
+
+print("\n8 GB de RAM en lasin 1:")
+lasin1.informacion(ram_min=8)
+
+
+lasin1.trasladar_ordenadores(lasin2, 2)

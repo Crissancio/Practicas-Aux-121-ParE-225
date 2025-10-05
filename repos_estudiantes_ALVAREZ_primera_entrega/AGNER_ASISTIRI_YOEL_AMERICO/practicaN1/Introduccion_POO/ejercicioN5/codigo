@@ -1,0 +1,63 @@
+public class Persona {
+    private String nombre;
+    private String paterno;
+    private String materno;
+    private int edad;
+    private int ci;
+
+
+    public Persona(String nombre,String paterno,String materno,int edad,int ci){
+        this.nombre=nombre;
+        this.paterno=paterno;
+        this.materno=materno;
+        this.edad=edad;
+        this.ci=ci;
+    }
+
+    public String getpaterno(){
+        return paterno;
+    }
+
+
+
+    public void mostrardatos(){
+        System.out.println("nom:"+nombre+" ap paterno: "+paterno+" apmaterno:"+materno+" edad:"+edad+" ci:"+ci);
+    }
+
+    public void mayordeedad(){
+        if (edad==18 || edad>18){
+            System.out.println("si es mayo de edad apenas xd");
+        }else {
+            System.out.println("no es mayor de edad");
+        }
+    }
+
+    public void modificarEdad(int nuevo){
+        edad=nuevo;
+        System.out.println("nueva edad es :"+edad);
+    }
+}
+
+
+
+public class Main {
+    public static void main(String[] args) {
+        Persona americo=new Persona("americo","agner","asistiri",19,13553236);
+        Persona juen=new Persona ("juan","cusi","flores",15,1234567);
+
+        americo.mostrardatos();
+        americo.mayordeedad();
+        americo.modificarEdad(18);
+
+        juen.mostrardatos();
+        juen.mayordeedad();
+        juen.modificarEdad(17);
+
+        if (juen.getpaterno()==americo.getpaterno()){
+            System.out.println("amvos tienen la mismo apellido");
+        }else {
+            System.out.println("ambos tienes apellido distinto");
+        }
+    }
+}
+

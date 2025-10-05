@@ -1,0 +1,65 @@
+abstract class Buz {
+    public int numpasajeros;
+    public double pasaje;
+    public int numdeasientos;
+
+    public Buz() {
+        
+    }
+
+    public Buz(int numpasajero, double pasaje, int numdeasientos) {
+        this.numpasajeros = numpasajero;
+        this.pasaje = pasaje;
+        this.numdeasientos = numdeasientos;
+    }
+
+    abstract int maspasajeros();
+
+    abstract double cobrarpasaje();
+
+    abstract void asientosdisponibles();
+}
+
+
+public class SubBuz extends Buz {
+
+    public SubBuz(int numpasajero, double pasaje, int numdeasientos) {
+        super(numpasajero, pasaje, numdeasientos);
+    }
+
+    @Override
+    public int maspasajeros() {
+        numpasajeros =numpasajeros+8;
+        System.out.println("se añadiran mas pasjeros total de pasajeros: " + numpasajeros);
+        return numpasajeros;
+    }
+
+    @Override
+    public double cobrarpasaje() {
+        double total = numpasajeros*pasaje;
+        System.out.println("se cobrar a los " + numpasajeros + " pasajeros total: " + total+"bs");
+        return total;
+    }
+
+    @Override
+    public void asientosdisponibles() {
+        System.out.println("num de aisntos:"+numdeasientos+" num de pasjeros: "+numpasajeros);
+        if (numdeasientos>=numpasajeros) {
+            System.out.println("Hay asentos disponibles.");
+        } else {
+            System.out.println("No hay suficientes asientos disponibles.");
+        }
+    }
+}
+
+
+
+public class Main {
+    public static void main(String[] args) {
+
+        Buz SubBuz= new SubBuz(10, 1.50, 12);
+        SubBuz.maspasajeros();
+        SubBuz.cobrarpasaje();
+        SubBuz.asientosdisponibles();
+    }
+}

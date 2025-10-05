@@ -1,0 +1,44 @@
+class Vehiculo:
+    def __init__(self, conductor, placa, id):
+        self.conductor = conductor
+        self.placa = placa
+        self.id = id
+
+
+class Bus(Vehiculo):
+    def __init__(self, conductor, placa, id, capacidad, sindicato):
+        super().__init__(conductor, placa, id)  
+        self.capacidad = capacidad
+        self.sindicato = sindicato
+
+
+class Auto(Vehiculo):
+    def __init__(self, conductor, placa, id, caballosFuerza, descapotable):
+        super().__init__(conductor, placa, id)  
+        self.caballosFuerza = caballosFuerza
+        self.descapotable = descapotable
+
+
+class Moto(Vehiculo):
+    def __init__(self, conductor, placa, id, cilindrada, casco):
+        super().__init__(conductor, placa, id)  
+        self.cilindrada = cilindrada
+        self.casco = casco
+
+
+bus1 = Bus("Americo", "123ABC", 1, 50, "Sindicato A")
+auto1 = Auto("asistiri", "456DEF", 2, 150, True)
+moto1 = Moto("yoel", "789GHI", 3, 250, True)
+
+
+print(f"Bus: Placa: {bus1.placa}, Conductor: {bus1.conductor}")
+print(f"Auto: Placa: {auto1.placa}, Conductor: {auto1.conductor}")
+print(f"Moto: Placa: {moto1.placa}, Conductor: {moto1.conductor}")
+
+
+def cambiar_conductor(vehiculo, nuevo_conductor):
+    vehiculo.conductor = nuevo_conductor
+
+
+cambiar_conductor(bus1, "Agner")
+print(f"Bus (nuv conductor): {bus1.conductor}")

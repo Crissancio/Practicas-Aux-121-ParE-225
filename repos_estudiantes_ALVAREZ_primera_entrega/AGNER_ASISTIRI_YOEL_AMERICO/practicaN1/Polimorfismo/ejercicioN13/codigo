@@ -1,0 +1,50 @@
+class ReproductorMP4:
+    def __init__(self, capacidad):
+        self.capacidad = capacidad
+        self.canciones = []
+        self.videos = []
+    
+    def mostrar_capacidad(self):
+        espacio_usado = sum([c[1] for c in self.canciones]) + sum([v[1] for v in self.videos])
+        espacio_disponible = self.capacidad - espacio_usado
+        print(f"Espacio disponible: {espacio_disponible} MB")
+    
+    def __add__(self, cancion):
+        if len(self.canciones) < 100 and self.capacidad - sum([c[1] for c in self.canciones]) >= cancion[1]:
+            self.canciones.append(cancion)
+            print(f"Se ha añadido la canción: {cancion[0]} - {cancion[2]}")
+        else:
+            print(f"No hay espacio suficiente para la canción: {cancion[0]}")
+
+    def __sub__(self, video):
+        if len(self.videos) < 3 and self.capacidad - sum([v[1] for v in self.videos]) >= video[1]:
+            self.videos.append(video)
+            print(f"Se ha añadido el video: {video[0]} - {video[2]}")
+        else:
+            print(f"No hay espacio suficiente para el video: {video[0]}")
+    
+    def borrar_cancion(self, nombre=None, artista=None):
+        if nombre:
+            self.canciones = [c for c in self.canciones if c[0] != nombre]
+            print(f"Se ha borrado la canción: {nombre}")
+        elif artista:
+            self.canciones = [c for c in self.canciones if c[2] != artista]
+            print(f"Se han borrado todas las canciones de: {artista}")
+    
+    def borrar_cancion_peso(self, peso):
+        self.canciones = [c for c in self.canciones if c[1] != peso]
+        print(f"Se han borrado las canciones con peso {peso} MB")
+        
+
+mp4 = ReproductorMP4(100)
+
+mp4 + ("sespacito", 30, "agner")
+mp4 + ("bailando", 40, "asisitiri")
+mp4 + ("looo", 25, "americo")
+
+mp4 - ("brankig bad", 50, "ntflix")
+
+mp4.borrar_cancion(nombre="Despacito")
+mp4.borrar_cancion_peso(40)
+
+mp4.mostrar_capacidad()

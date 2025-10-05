@@ -1,0 +1,81 @@
+public class Fruta {
+    private String nombre;
+    private String tipo;
+    private int numVitaminas;
+    private String[] v;
+
+    public Fruta(String nombre,String tipo,int numVitaminas,String[] v){
+        this.nombre=nombre;
+        this.tipo = tipo;
+        this.numVitaminas = numVitaminas;
+        this.v = v;
+    }
+
+
+    public int getnumVitaminas(){
+        return numVitaminas;
+    }
+    public void mostrarvitaminas(){
+        System.out.println("nombre:"+this.nombre+"  susvitaminas son:");
+        for(int i=0;i<v.length;i++){
+            System.out.println("vitamina:"+v[i]);
+        }
+    }
+
+    public void frutaconmayorcitrico(){
+        int c=0;
+        for(int j=0;j<v.length;j++){
+            if (v[j].equals("c")){
+                c=c+1;
+            }
+        }
+
+        System.out.println("la fruta:"+this.nombre+" tinene num de c"+c);
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+public class Main {
+    public static void main(String[] args) {
+
+
+        Fruta fruta1 = new Fruta("Kiwi", "tropical", 2
+                , new String[] {"K", "E"});
+
+        String[] vitaminasCitrus = {"c", "e"};
+        Fruta fruta2 = new Fruta("Citrus", "citrico", 2, vitaminasCitrus);
+
+        String[] vitaminasNaranja = {"e", "c","c"};
+        Fruta fruta3 = new Fruta("Naranja", "citrico", 3, vitaminasNaranja);
+
+        if (fruta1.getnumVitaminas() == 3 && fruta2.getnumVitaminas() == 3 && fruta3.getnumVitaminas() == 3) {
+            System.out.println("Las tres frutas tienen la misma cantidad de vitaminas.");
+        } else if (fruta1.getnumVitaminas() > fruta2.getnumVitaminas() && fruta1.getnumVitaminas() > fruta3.getnumVitaminas()) {
+            System.out.println("La fruta 1 tiene el mayor número de vitaminas.");
+        } else if (fruta2.getnumVitaminas() > fruta1.getnumVitaminas() && fruta2.getnumVitaminas() > fruta3.getnumVitaminas()) {
+            System.out.println("La fruta 2 tiene el mayor número de vitaminas.");
+        } else if (fruta3.getnumVitaminas() > fruta1.getnumVitaminas() && fruta3.getnumVitaminas() > fruta2.getnumVitaminas()) {
+            System.out.println("La fruta 3 tiene el mayor número de vitaminas.");
+        } else {
+            System.out.println("Hay frutas con la misma cantidad de vitaminas.");
+        }
+
+        fruta1.mostrarvitaminas();
+        fruta2.mostrarvitaminas();
+        fruta3.mostrarvitaminas();
+
+        fruta1.frutaconmayorcitrico();
+        fruta2.frutaconmayorcitrico();
+        fruta3.frutaconmayorcitrico();
+    }
+
+}

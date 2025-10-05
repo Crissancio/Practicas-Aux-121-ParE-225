@@ -1,0 +1,113 @@
+public class Matriz {
+    private float[][] matriz;
+
+    public Matriz() {
+        matriz = new float[10][10];
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                if (i == j) {
+                    matriz[i][j] = 1;
+                } else {
+                    matriz[i][j] = 0;
+                }
+            }
+        }
+    }
+
+
+    public Matriz(float[][] valores) {
+        matriz = new float[10][10];
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                matriz[i][j] = valores[i][j];
+            }
+        }
+    }
+
+
+    public Matriz sumar(Matriz m) {
+        Matriz resultado = new Matriz(); 
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                resultado.matriz[i][j] = this.matriz[i][j] + m.matriz[i][j]; 
+            }
+        }
+        return resultado;
+    }
+
+
+    public Matriz restar(Matriz m) {
+        Matriz resultado = new Matriz(); 
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                resultado.matriz[i][j] = this.matriz[i][j] - m.matriz[i][j]; 
+            }
+        }
+        return resultado;
+    }
+
+
+    public boolean igual(Matriz m) {
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                if (this.matriz[i][j] != m.matriz[i][j]) {
+                    return false; 
+                }
+            }
+        }
+        return true; 
+    }
+
+
+    public void imprimir() {
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                System.out.print(matriz[i][j] + " ");
+            }
+            System.out.println(); 
+        }
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+
+
+        Matriz m1 = new Matriz();
+        System.out.println("Matriz identidad:");
+        m1.imprimir();
+
+
+        float[][] valores = new float[10][10];
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                valores[i][j] = (i + 1) * (j + 1);
+            }
+        }
+
+
+
+        Matriz m2 = new Matriz(valores);
+        System.out.println("Matriz personalizada:");
+        m2.imprimir();
+
+
+        Matriz m3 = m1.sumar(m2);
+        System.out.println("Resultado de la suma:");
+        m3.imprimir();
+
+
+        Matriz m4 = m1.restar(m2);
+        System.out.println("Resultado de la resta:");
+        m4.imprimir();
+
+
+        System.out.println("¿La matriz m1 es igual a m2? " + m1.igual(m2));
+    }
+}
+
+//este era reee complicado auxi xd
+
+
+

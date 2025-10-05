@@ -2,7 +2,7 @@ import os
 import shutil
 import glob
 
-user = "TARQUI"
+user = "ALVAREZ"
 
 # Ruta base con comodín
 base_path = f"./repos_estudiantes_{user}_primera_entrega/*/"
