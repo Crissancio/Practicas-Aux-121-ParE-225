@@ -13,7 +13,7 @@ class Matriz:
     def mostrar(self):
         for fila in self.matriz:
             print(fila)
-
+    # SE DEBN SOBRECARAGA +, -  Y ==
     def sumar(self, otra):
         resultado = [[self.matriz[i][j] + otra.matriz[i][j] for j in range(self.columnas)] for i in range(self.filas)]
         return Matriz(resultado)

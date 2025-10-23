@@ -6,6 +6,8 @@ class VideoJuego:
         self.plataforma = plataforma
         self.cantidadJugadores = cantidadJugadores
     # Sobrecarga de métodos agregarJugadores()
+    # LOS METODOS SOBRECARGADOS SE DEBEN LLMAR IGUAL
+    
     #  Agregar un solo jugador
     def agregarJugadores(self):
         self.cantidadJugadores += 1

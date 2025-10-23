@@ -16,7 +16,7 @@ class Crucero:
     def agregar_pasajero(self, pasajero, costo):
         self.pasajeros.append(pasajero)
         self.costos.append(costo)
-
+    # FALTA ++ Y --
     def mostrar(self):
         print(f"Crucero: {self.nombre}, Origen: {self.pais_origen}, Destino: {self.pais_destino}, Habitación: {self.nro_habitacion}")
         for i, p in enumerate(self.pasajeros):

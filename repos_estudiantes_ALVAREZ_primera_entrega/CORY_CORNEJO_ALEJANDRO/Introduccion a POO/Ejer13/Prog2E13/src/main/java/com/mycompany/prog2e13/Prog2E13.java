@@ -10,6 +10,7 @@ public class Prog2E13 {
         Fruta f3=new Fruta("Frutilla",c);
         Fruta f4=new Fruta("Papaya",p);
         Fruta[] frutas= {f2, f3, f4};
+        // FAÑTA INCISO c)
         System.out.println("Fruta con mas vitaminas");
         Fruta mayor = frutas[0];
         for (Fruta f : frutas) {

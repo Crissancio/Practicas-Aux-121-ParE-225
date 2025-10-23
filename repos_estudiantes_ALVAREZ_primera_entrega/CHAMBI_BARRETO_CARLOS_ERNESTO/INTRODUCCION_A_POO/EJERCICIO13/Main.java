@@ -44,6 +44,7 @@ public class Main {
                 }
             }
         }
+        // se debe buscar a la vitamina x
 
         System.out.println("\nCantidad total de vitaminas C en todas las frutas: " + countVitC);
 

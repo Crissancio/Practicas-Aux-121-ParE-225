@@ -8,4 +8,6 @@ public class Main {
         tri.pedalear();
         tri.correr();
     }
+
+    // FALTAN ATRIBUTOS EN CLASES 
 }

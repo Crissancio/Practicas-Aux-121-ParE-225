@@ -7,6 +7,7 @@ class Matriz:
             if len(valores) != self.TAM or any(len(fila) != self.TAM for fila in valores):
                 raise ValueError("La matriz debe ser de 10x10")
             self.matriz = [fila[:] for fila in valores]
+    # SE DEBEN SOBRECARGAR LOS OPERADORES +, - Y ==
     def sumar(self, otra):
         resultado = [[self.matriz[i][j] + otra.matriz[i][j] for j in range(self.TAM)] for i in range(self.TAM)]
         return Matriz(resultado)

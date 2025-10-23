@@ -9,6 +9,7 @@ class Matriz:
     def crear_matriz(cls, matriz):
         return cls(matriz)
 
+    # SE DEBEN SOBRECARGAR LOS OPERADORES + y -
     def sumar(self, otra_matriz):
         if len(self.matriz) != len(otra_matriz.matriz) or len(self.matriz[0]) != len(otra_matriz.matriz[0]):
             raise ValueError("Las matrices deben tener el mismo tamaño")
@@ -21,6 +22,7 @@ class Matriz:
         resultado = [[self.matriz[i][j] - otra_matriz.matriz[i][j] for j in range(len(self.matriz[0]))] for i in range(len(self.matriz))]
         return Matriz(resultado)
 
+    # SE DEBE SOBRECARGAR EL OPERADOR ==
     def igual(self, otra_matriz):
         if len(self.matriz) != len(otra_matriz.matriz) or len(self.matriz[0]) != len(otra_matriz.matriz[0]):
             return False

@@ -3,6 +3,7 @@ class Parada:
         self.nombreP = nombreP
         self.admins = [None] * 10
         self.autos = [[None, None, None]] * 10
+    # falta sobrecarga de cosntructor
 
     def mostrar(self):
         print(f"Nombre de la parada: {self.nombreP}")

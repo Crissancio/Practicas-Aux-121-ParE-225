@@ -43,6 +43,7 @@ if __name__ == "__main__":
     pres1 = Presidente("Luis", "Arce", "Economista", 25, "MAS", "Líder principal")
 
     # Forma 2 → asignando después de crear
+    # SE DEBE SOBRECARGAR EL CONSTRUCTOR
     pres2 = Presidente()
     pres2.nombre = "Carlos"
     pres2.apellido = "Mesa"

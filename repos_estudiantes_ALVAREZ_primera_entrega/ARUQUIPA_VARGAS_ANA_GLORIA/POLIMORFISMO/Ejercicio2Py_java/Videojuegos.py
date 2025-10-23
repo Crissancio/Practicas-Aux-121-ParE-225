@@ -7,7 +7,7 @@ class VideoJuego:
     def agregaJugadores(self):
         self.cantidad_jugadores += 1
         print("Se agregó 1 jugador.")
-
+    # SE DEBEN LLAMAR IGUAL LOS EMTODOS SOBRECARGADOS
     def agregarJugadoresDesdeTeclado(self):
         try:
             cantidad = int(input("Ingrese la cantidad de jugadores a agregar: "))

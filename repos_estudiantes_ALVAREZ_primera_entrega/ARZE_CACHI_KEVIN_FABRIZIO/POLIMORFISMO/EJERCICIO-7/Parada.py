@@ -17,6 +17,8 @@ class Parada:
         for i in range(self.nroAutos):
             print(f"  {i+1}. Modelo: {self.autos[i][0]}, Conductor: {self.autos[i][1]}")
 
+
+    # LOS METODOS SOBRECARGADOS SE DEBEN LLAMAR IGUAL
     def adicionar(self, x):
         if self.nroAdmins < 10:
             self.admins[self.nroAdmins] = x

@@ -1,4 +1,4 @@
-Class Videojuego:
+Cclass Videojuego:
     Def __init__(self, nombre=None, plataforma=None, cantidad_jugadores=0):
         # Constructor básico con valores por defecto
         Self.nombre = nombre

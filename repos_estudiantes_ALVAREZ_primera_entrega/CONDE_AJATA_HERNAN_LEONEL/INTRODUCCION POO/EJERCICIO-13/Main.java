@@ -14,6 +14,7 @@ public class Main {
 		Fruta f3 = new Fruta();
 		
 		f3.mostrar();
+		//FALTA MOSTRAR LAS VITAMINAS DE LA FRUTA X
 		 
 		System.out.println("***********fruta con mas vitaminas!!!************");
 		Fruta masVitaminas = f1;

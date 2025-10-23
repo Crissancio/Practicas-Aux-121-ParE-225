@@ -23,7 +23,7 @@ class Parada:
         for auto in self.autos:
             if auto[0]:
                 print(f"Modelo: {auto[0]}, Conductor: {auto[1]}, Placa: {auto[2]}")
-
+    # SE DEBEN LLAMAR IGUAL
     def adicionar_admin(self, nuevo_admin):
         for i in range(len(self.admins)):
             if self.admins[i] is None:

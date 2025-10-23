@@ -57,6 +57,7 @@ class Laboratorio:
 
 
 # === Función para trasladar ordenadores ===
+# DEBE SER UN METODO
 def trasladarOrdenadores(lab_origen, lab_destino, cantidad):
     print("\n📦 Traslado de ordenadores entre laboratorios")
     print("\n-- Estado antes del traslado --")

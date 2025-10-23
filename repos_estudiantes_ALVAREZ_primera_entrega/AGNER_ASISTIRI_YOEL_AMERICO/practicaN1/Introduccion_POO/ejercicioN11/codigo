@@ -43,3 +43,6 @@ mascota2 = Mascota("aton", "perro", 70)
 mascota2.alimentar()
 mascota2.jugar()
 mascota2.mostrarenergia()
+
+
+# no resuelve el problema 11

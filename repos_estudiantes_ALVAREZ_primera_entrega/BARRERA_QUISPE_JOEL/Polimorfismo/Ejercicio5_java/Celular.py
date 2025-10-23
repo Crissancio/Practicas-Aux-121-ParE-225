@@ -14,6 +14,7 @@ class Celular:
         self.__ram = ram
         self.__nroApp = nroApp
     
+    # se debe sobrecargar los operadores 
     def iadd(self):
         self.__nroApp += 10
     

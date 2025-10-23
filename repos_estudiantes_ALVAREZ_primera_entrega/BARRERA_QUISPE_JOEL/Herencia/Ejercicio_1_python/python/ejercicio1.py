@@ -25,3 +25,5 @@ class Cliente(Persona):
 
     def method(self):
         print("Comprar")
+
+# FALTA LA LISTA DE ERRORES 

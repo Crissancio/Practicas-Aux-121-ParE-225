@@ -1,7 +1,7 @@
 class Matriz:
     def __init__(self, matriz):
         self.matriz = matriz
-        
+    # debe ser sobrecarga de constructor, no un metodo    
     def matriz_identidad(self, tamaño):
         for i in range(tamaño):
             fila = []

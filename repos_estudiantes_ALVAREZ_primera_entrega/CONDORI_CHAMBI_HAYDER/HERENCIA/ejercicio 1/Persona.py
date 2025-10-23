@@ -23,3 +23,4 @@ print(f"Persona: {persona.nombre} {persona.apellido}, CI: {persona.ci}")
 print(f"Cliente: {cliente.nombre} {cliente.apellido}, CI: {cliente.ci}, Nro Cliente: {cliente.nroCliente}, Nro Cuenta: {cliente.nroCuenta}")
 print(f"Jefe: {jefe.nombre} {jefe.apellido}, CI: {jefe.ci}, Sucursal: {jefe.sucursal}, Tipo: {jefe.tipo}")
 
+# falta la lista de errores

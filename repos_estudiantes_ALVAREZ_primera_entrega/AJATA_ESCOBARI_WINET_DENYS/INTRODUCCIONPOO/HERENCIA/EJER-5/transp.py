@@ -64,3 +64,6 @@ if __name__ == "__main__":
 
     print("\n=== Cambio de conductor ===")
     bus1.cambiarConductor("Jinyoung")
+
+
+# DIAGRAMA INCORRECTO EN LA ORIENTACION DE LAS FLECHAS DE HERENCIA

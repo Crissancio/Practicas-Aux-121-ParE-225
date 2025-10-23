@@ -17,6 +17,7 @@ class Partido:
 
 
 class Presidente(Politico, Partido):
+    # sin sobrecarga del constructor
     def __init__(self, nombre, apellido, profesion, añosExp, partido):
         Politico.__init__(self, profesion, añosExp)  
         Partido.__init__(self, partido.nombreP, partido.rol)  

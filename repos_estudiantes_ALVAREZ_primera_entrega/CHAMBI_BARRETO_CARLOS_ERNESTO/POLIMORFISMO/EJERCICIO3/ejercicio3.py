@@ -11,6 +11,7 @@ class Matriz:
                 for j in range(n):
                     self.matriz[i][j] = valores[i][j]
 
+    # se debe sobrecargar los operadores
     def sumar(self, otra):
         resultado = Matriz(n=self.n)
         for i in range(self.n):

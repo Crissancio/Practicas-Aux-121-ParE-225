@@ -1,3 +1,6 @@
+# DIAGRAMA DE CLASES ERRONEO
+
+
 class Nadador:
     def __init__(self, estilo_natacion):
         self.estilo_natacion = estilo_natacion

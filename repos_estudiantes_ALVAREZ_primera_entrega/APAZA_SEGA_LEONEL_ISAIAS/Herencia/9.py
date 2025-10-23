@@ -9,6 +9,7 @@ class Partido:
         self.rol = rol
 
 class Presidente(Politico, Partido):
+    # FALTA SOBRECARGA DE OPERADORES
     def __init__(self, nombre, apellido, profesion, añosExp, nombreP, rol):
         Politico.__init__(self, profesion, añosExp)
         Partido.__init__(self, nombreP, rol)
@@ -23,3 +24,4 @@ p1 = Presidente("Juan", "Perez", "Abogado", 10, "PAIS", "Líder")
 p2 = Presidente("Maria", "Lopez", "Economista", 12, "UN", "Candidata")
 p1.mostrar()
 p2.mostrar()
+# SIN INSCISO c

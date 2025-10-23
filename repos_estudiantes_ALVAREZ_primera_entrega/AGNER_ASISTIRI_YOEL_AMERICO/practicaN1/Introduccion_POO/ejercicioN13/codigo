@@ -10,7 +10,7 @@ public class Fruta {
         this.numVitaminas = numVitaminas;
         this.v = v;
     }
-
+    // falta sobrecarga de contructores
 
     public int getnumVitaminas(){
         return numVitaminas;
@@ -32,6 +32,12 @@ public class Fruta {
 
         System.out.println("la fruta:"+this.nombre+" tinene num de c"+c);
     }
+    //falta instancia de objetos
+    /* faltan:
+    b) Verificar cuál es la fruta con más vitaminas.
+    e) Ordenar las frutas alfabéticamente según el nombre de sus vitaminas. 
+
+     */
 
 
 }

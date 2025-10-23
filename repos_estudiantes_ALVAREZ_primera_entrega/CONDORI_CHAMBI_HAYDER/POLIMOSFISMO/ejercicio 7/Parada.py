@@ -10,7 +10,7 @@ class Parada:
         print(f"Número de Autos: {len(self.autos)}")
         for idx, auto in enumerate(self.autos, 1):
             print(f"  Auto {idx}: Marca: {auto[0]}, Dueño: {auto[1]}, Matrícula: {auto[2]}")
-
+    # se deben llamar igual los metodos sobrecargados
     def adicionar_admin(self, x):
         self.admins += x
         print(f"Se agregaron {x} administradores. Total ahora: {self.admins}")

@@ -39,3 +39,4 @@ cliente.mostrar_datos()
 jefe = Jefe("Carlos", "Pérez", "7654321", "Sucursal Norte", "General")
 print("Datos del Jefe:")
 jefe.mostrar_datos()
+# FALTA LA LISTA DE ERORRES

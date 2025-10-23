@@ -12,6 +12,7 @@ class Matriz:
                 for j in range(10):
                     self.matriz[i][j] = matriz[i][j]
 
+    # SE DEBEN SOBRECARAGAR + - ==
     def sumar(self, otro):
         resultado = Matriz()
         for i in range(10):

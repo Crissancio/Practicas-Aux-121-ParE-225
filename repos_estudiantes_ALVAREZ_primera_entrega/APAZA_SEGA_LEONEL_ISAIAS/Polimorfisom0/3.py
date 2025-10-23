@@ -5,7 +5,7 @@ class Matriz:
             self.matriz = [[1 if i == j else 0 for j in range(3)] for i in range(3)]
         else:
             self.matriz = matriz
-
+    #  SE DEBEN SOBRECARGAR LOS OPERADORES +, - y ==
     def sumar(self, otra):
         return Matriz([[self.matriz[i][j] + otra.matriz[i][j] for j in range(3)] for i in range(3)])
 

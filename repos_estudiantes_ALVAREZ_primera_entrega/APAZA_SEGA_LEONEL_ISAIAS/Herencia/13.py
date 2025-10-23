@@ -21,7 +21,7 @@ class Mesero(Empleado):
 
     def sueldo_total(self):
         return self.sueldo + self.propina
-
+# FALTAN ATRIBUTOS
 class Administrativo(Empleado):
     pass
 
@@ -32,3 +32,4 @@ a1 = Administrativo("Colette", 2500)
 print("Sueldo Chef:", chef.sueldo_total())
 print("Sueldo Mesero:", m1.sueldo_total())
 print("Sueldo Administrativo:", a1.sueldo_total())
+# FALTA INSCISO b Y c

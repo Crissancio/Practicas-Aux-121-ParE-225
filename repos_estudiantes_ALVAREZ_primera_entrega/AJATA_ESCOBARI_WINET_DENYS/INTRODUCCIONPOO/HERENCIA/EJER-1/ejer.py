@@ -43,3 +43,7 @@ if __name__ == "__main__":
     print("\n=== Datos del Jefe ===")
     j1 = Jefe("Ned", "Flanders", "4563219", "Central", "General")
     j1.mostrarDatos()
+
+
+# EL DIAGRAMA ESTA INCORRECTO EN LA DIRECCION DE LAS FLECHAS
+# FALTA LA LISTA DE ERROES ENCONTRADOS

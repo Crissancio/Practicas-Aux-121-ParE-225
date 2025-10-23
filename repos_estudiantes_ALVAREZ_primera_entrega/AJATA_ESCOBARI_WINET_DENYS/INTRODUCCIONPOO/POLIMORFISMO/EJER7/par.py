@@ -18,6 +18,8 @@ class Parada:
             if auto[0] is not None:
                 print(f"Modelo: {auto[0]}, Conductor: {auto[1]}, Placa: {auto[2]}")
 
+
+    # LOS METODOS SOBRECARGADOS SE DEBEN LLAMAR IGUAL
     def adicionarAdmin(self, admin):
         if self.adminIndex < len(self.admins):
             self.admins[self.adminIndex] = admin

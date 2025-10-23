@@ -18,6 +18,7 @@ class Matriz:
             print(fila)
         print()
 
+    # SE DEBEN SOBRECARGAR LOS OPREADORES
     def sumar(self, otra):
         """Suma la matriz actual con otra y devuelve una nueva matriz."""
         n = self.n

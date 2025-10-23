@@ -32,6 +32,7 @@ public class Main {
         buzon3.agregarCarta(1, c8);
         buzon3.agregarCarta(2, c9);
 
+        // debe ser un metodo en buzon
         int contador = 0;
         Buzon[] buzones = {buzon1, buzon2, buzon3};
         for (Buzon b : buzones) {
@@ -42,7 +43,7 @@ public class Main {
             }
         }
         System.out.println("Pepe Mujica recibió " + contador + " cartas.");
-
+        // debe ser un metodo en buzon
         for (Buzon b : buzones) {
             for (int i = 0; i < b.cartas.length; i++) {
                 if (b.cartas[i] != null && b.cartas[i].codigo.equals("C456")) {
@@ -52,6 +53,7 @@ public class Main {
             }
         }
 
+        // debe ser un metodo en buzon
         String remitenteBuscado = "Pepe Mujica";
         boolean recibio = false;
         for (Buzon b : buzones) {
@@ -65,6 +67,8 @@ public class Main {
         if (!recibio) {
             System.out.println(remitenteBuscado + " no recibió ninguna carta.");
         }
+
+        // debe ser un metodo para buscar dentro de carta
         String clave = "amor";
         for (Buzon b : buzones) {
             for (Carta carta : b.cartas) {
@@ -74,6 +78,7 @@ public class Main {
             }
         }
 
+        // debe ser un metodo en buzon
         for (Buzon b : buzones) {
             for (Carta carta : b.cartas) {
                 if (carta != null && carta.descripcion.toLowerCase().contains(clave)) {

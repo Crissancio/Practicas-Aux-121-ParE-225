@@ -1,3 +1,7 @@
+# SE DEBE SOBRECARGAR LOS OPERADORES ++ Y -- PARA LEER DATOS Y MOSTRAR LOS DATOS 
+# DE AMBAS CLASES
+
+
 class Pasajero:
     def __init__(self, nombre, edad, genero, nroHabitacion, costoPasaje):
         self.nombre = nombre
@@ -24,10 +28,12 @@ class Crucero:
         return f"Crucero: {self.nombre}, Origen: {self.paisOrigen}, Destino: {self.paisDestino}, Pasajeros: {len(self.pasajeros)}"
 
     # operador == (mismo número de pasajeros)
+    # EL OPERADOR == DEBE MOSTRAR EL TOTAL DE PASAJES
     def __eq__(self, otro):
         return len(self.pasajeros) == len(otro.pasajeros)
 
     # operador + (suma de costos de pasajes de los pasajeros)
+    # EL OPERADOR + DEBE MOSTRASR SI LOS CRUCEROS TIENE EL MISMO NUMERO DE PASAJEROS
     def __add__(self, otro):
         total1 = sum(p.costoPasaje for p in self.pasajeros)
         total2 = sum(p.costoPasaje for p in otro.pasajeros)

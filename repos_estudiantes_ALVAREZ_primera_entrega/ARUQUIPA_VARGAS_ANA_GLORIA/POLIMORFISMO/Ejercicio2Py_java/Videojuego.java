@@ -22,7 +22,7 @@ public class Videojuego {
         this.cantidadJugadores += 1;
         System.out.println("Se agregó 1 jugador.");
     }
-
+    // SE DEBEN LLAMAR IGUAL LOS METODOS SOBRECARGADOS
     public void agregarJugadoresDesdeTeclado() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Ingrese la cantidad de jugadores a agregar: ");

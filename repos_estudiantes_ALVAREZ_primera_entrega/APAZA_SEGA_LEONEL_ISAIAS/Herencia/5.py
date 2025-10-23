@@ -6,6 +6,8 @@ class Vehiculo:
     def mostrar(self):
         print(f"Placa: {self.placa} | Conductor: {self.conductor}")
 
+# FALTAN ATRIBUTOS DE BUS, MOTO Y AUTO
+
 class Auto(Vehiculo):
     pass
 
@@ -19,5 +21,6 @@ a.mostrar()
 m.mostrar()
 
 # Cambiar conductor
+# DEBE SER UN METODO DE VEHICULO
 a.conductor = "Ana"
 print("Nuevo conductor del auto:", a.conductor)

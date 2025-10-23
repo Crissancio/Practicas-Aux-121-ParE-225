@@ -81,5 +81,6 @@ public class Main {
 
         cliente1.metodo();
         jefe1.metodo();
+        // falta la lista de errores
     }
 }

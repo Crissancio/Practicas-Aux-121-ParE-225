@@ -20,7 +20,7 @@ class Crucero:
         self.paisDestino = paisDestino
         self.nropasajeros = nropasajeros
         self.pasajeros = []
-
+    # falta sobrecargar ++ y --
     def __add__(self, other):
         if isinstance(other, Crucero):
             if len(self.pasajeros) == len(other.pasajeros):

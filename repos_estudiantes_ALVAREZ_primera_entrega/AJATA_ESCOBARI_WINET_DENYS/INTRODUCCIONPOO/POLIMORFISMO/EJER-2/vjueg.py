@@ -9,6 +9,7 @@ class Videojuego:
     def con_plataforma(cls, nombre, plataforma):
         return cls(nombre, plataforma)
 
+    # LOS METODOS SOBRECARGADOS SE DEBEN LLAMAR IGUAL
     def agregar_jugador(self):
         self.cantidad_jugadores += 1
         print(f"Se agregó un jugador a {self.nombre}. Cantidad de jugadores actual: {self.cantidad_jugadores}")
@@ -19,6 +20,7 @@ class Videojuego:
 
 def main():
     # Instanciar 2 videojuegos
+    # SE DEBE SOBRECARGAR EL CONSTRUCTOR
     juego1 = Videojuego("FIFA", "PS4", 4)
     juego2 = Videojuego.con_plataforma("Call of Duty", "Xbox")
 

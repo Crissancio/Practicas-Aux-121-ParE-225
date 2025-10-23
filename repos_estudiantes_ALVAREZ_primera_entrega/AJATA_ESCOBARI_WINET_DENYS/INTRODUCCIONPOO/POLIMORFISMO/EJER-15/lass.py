@@ -21,6 +21,7 @@ class Laboratorio:
         else:
             print("No hay más espacio para ordenadores")
 
+    # SE DEBEN TENRE 3 METODOS informacion() SOBRECARGADOS DE DIFERENTES FORMAS
     def informacion(self, estado=None):
         if estado is None:
             for ordenador in self.ordenadores:

@@ -108,5 +108,5 @@ public class Mp4 {
             }
         }
     }
-
+    // SE DEBEN SOBRECARGAR LOS OPERADORES 
 }

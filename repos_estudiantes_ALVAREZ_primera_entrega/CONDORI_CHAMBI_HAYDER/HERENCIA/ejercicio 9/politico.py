@@ -9,6 +9,7 @@ class Partido:
         self.rol = rol
 
 class Presidente(Politico, Partido):
+    # falta sobrecraga de constructor
     def __init__(self, nombre, apellido, profesion, anosExp, nombreP, rol):
         Politico.__init__(self, profesion, anosExp)
         Partido.__init__(self, nombreP, rol)

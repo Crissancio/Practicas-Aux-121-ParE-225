@@ -49,6 +49,8 @@ def main():
     print("\nLa fruta con más vitaminas es:", mas_vitaminas.nombre, "con", mas_vitaminas.nroVitaminas)
 
     # c) Mostrar las vitaminas de la fruta X (ej: Banana)
+    # SE DEBE BUSCAR A LA FRUTA X
+    
     print("\nVitaminas de Banana:", f3.mostrar_vitaminas())
 
     # d) ¿Cuántas vitaminas son cítricas? (contando las "C")

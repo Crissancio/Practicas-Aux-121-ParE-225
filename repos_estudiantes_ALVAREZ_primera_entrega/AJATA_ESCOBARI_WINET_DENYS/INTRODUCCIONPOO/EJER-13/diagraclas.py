@@ -29,6 +29,7 @@ def main():
     print(f"La fruta con más vitaminas es {fruta_con_mas_vitaminas.get_nombre()} con {fruta_con_mas_vitaminas.get_nro_vitaminas()} vitaminas")
 
     # Mostrar las vitaminas que tiene la fruta x
+    # SE DEBE BUSCAR A LA FRUTA x
     print(f"Las vitaminas de {fruta1.get_nombre()} son: {', '.join(fruta1.get_vitaminas())}")
 
     # Cuantas vitaminas son cítricas

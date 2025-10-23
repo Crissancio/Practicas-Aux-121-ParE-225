@@ -35,7 +35,7 @@ print(f"Bus: Placa: {bus1.placa}, Conductor: {bus1.conductor}")
 print(f"Auto: Placa: {auto1.placa}, Conductor: {auto1.conductor}")
 print(f"Moto: Placa: {moto1.placa}, Conductor: {moto1.conductor}")
 
-
+# debe ser un metodo de vehiculo
 def cambiar_conductor(vehiculo, nuevo_conductor):
     vehiculo.conductor = nuevo_conductor
 

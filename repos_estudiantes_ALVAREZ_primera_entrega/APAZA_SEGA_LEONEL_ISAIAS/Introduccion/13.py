@@ -12,3 +12,5 @@ f3 = Fruta("Mango", "Tropical", ["A", "C", "E"])
 frutas = [f1, f2, f3]
 mas_vitaminas = max(frutas, key=lambda f: len(f.vitaminas))
 print(f"La fruta con más vitaminas es: {mas_vitaminas.nombre}")
+
+# FALTA c, d y e

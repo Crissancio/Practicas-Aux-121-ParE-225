@@ -18,6 +18,7 @@ class Crucero:
         self.nombre = nombre
         self.pasajeros = []
 
+    # SE DEBE SOBRECARGAR ++ Y --
     def leer(self):
         n = int(input(f"¿Cuántos pasajeros tiene el crucero {self.nombre}? "))
         for i in range(n):

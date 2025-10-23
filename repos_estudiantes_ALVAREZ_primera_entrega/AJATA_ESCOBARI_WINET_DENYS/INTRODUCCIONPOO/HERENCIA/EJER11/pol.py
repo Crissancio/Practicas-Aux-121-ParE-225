@@ -9,6 +9,7 @@ class Persona:
 
 
 class Empleado:
+    # FALTAN IDENTIFICAR 2 ATRIBUTOS
     def get_sueldo(self):
         pass
 
@@ -46,6 +47,8 @@ class JefePolicia(Persona, Empleado):
         print(f"Zona: {self.zona}")
 
 
+
+
 if __name__ == "__main__":
     j1 = JefePolicia("Jaden Smith", 45, 5200, "Capitán", "Zona Sur")
     j2 = JefePolicia("Jenna Ortega", 42, 6100, "Capitán", "Zona Norte")
@@ -68,3 +71,6 @@ if __name__ == "__main__":
         print("Ambos tienen el mismo grado.")
     else:
         print("Tienen grados diferentes.")
+
+
+# DIAGRAMA DE CLASES ERRONEO

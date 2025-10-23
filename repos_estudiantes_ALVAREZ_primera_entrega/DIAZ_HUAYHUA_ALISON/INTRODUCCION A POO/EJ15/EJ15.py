@@ -57,7 +57,7 @@ buzon1.mostrar_cartas()
 buzon2.mostrar_cartas()
 buzon3.mostrar_cartas()
 
-
+# debe ser un metodo
 def contar_cartas_destinatario(buzones, destinatario):
     contador = 0
     for buzon in buzones:
@@ -72,7 +72,7 @@ total = contar_cartas_destinatario([buzon1, buzon2, buzon3], destinatario_buscar
 
 print(f"El destinatario '{destinatario_buscar}' recibió {total} cartas")
 
-
+# debe ser un metodo
 def eliminar_carta_por_codigo(buzones, codigo):
     for buzon in buzones:
         for i in range(buzon.nroC):
@@ -95,7 +95,7 @@ eliminar_carta_por_codigo([buzon1, buzon2, buzon3], codigo_eliminar)
 print("\n BUZONES DESPUÉS DE ELIMINAR")
 buzon1.mostrar_cartas()
 
-
+# dedbe ser un metodo
 def remitente_recibio_carta(buzones):
     for buzon in buzones:
         for i in range(buzon.nroC):
@@ -112,7 +112,7 @@ def remitente_recibio_carta(buzones):
 
 remitente_recibio_carta([buzon1, buzon2, buzon3])
 
-
+# dedbe ser un metodo
 def buscar_palabra_clave(cartas, palabra):
     print(f"Buscando palabra '{palabra}' en descripciones:")
     encontradas = 0

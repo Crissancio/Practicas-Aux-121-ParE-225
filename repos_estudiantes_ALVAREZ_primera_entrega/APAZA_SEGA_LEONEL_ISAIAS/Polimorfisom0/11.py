@@ -14,6 +14,8 @@ class Crucero:
     def __add__(self, otro):
         return len(self.pasajeros) == len(otro.pasajeros)
 
+# FALTA B Y E
+
 class Pasajero:
     def __init__(self, nombre, sexo, costo):
         self.nombre = nombre

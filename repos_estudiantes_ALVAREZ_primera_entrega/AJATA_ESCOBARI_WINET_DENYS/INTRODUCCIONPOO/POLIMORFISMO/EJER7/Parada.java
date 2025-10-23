@@ -31,6 +31,7 @@ public class Parada {
         }
     }
 
+    // LOS EMTODOS SOBRECARGADOS SE DEBEN LLAMAR IGUAL
     public void adicionarAdmin(String admin) {
         if (adminIndex < admins.length) {
             admins[adminIndex] = admin;

@@ -28,3 +28,4 @@ if j1.sueldo > j2.sueldo:
     print(f"{j1.nombre} gana más.")
 else:
     print(f"{j2.nombre} gana más.")
+#FALTA C

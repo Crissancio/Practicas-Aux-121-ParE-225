@@ -1,3 +1,5 @@
+// NO COINCIDE CON EL PRIEMR EJERCICIO
+
 class Persona {
     protected String nombre;
     protected int ci;

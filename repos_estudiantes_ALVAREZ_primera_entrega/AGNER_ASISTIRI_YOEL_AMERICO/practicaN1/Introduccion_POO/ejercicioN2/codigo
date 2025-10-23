@@ -29,6 +29,7 @@ public class SubBuz extends Buz {
 
     @Override
     public int maspasajeros() {
+        //se debe incrementar una cantidad x
         numpasajeros =numpasajeros+8;
         System.out.println("se añadiran mas pasjeros total de pasajeros: " + numpasajeros);
         return numpasajeros;

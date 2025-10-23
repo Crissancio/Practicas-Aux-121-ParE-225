@@ -26,3 +26,4 @@ b1.agregar_carta(c1)
 b1.agregar_carta(c2)
 b1.buscar_por_palabra("amor")
 
+# falta  c, d, e y g

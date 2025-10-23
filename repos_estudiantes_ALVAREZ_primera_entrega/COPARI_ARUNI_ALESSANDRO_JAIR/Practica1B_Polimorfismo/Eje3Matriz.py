@@ -22,6 +22,7 @@ class Matriz:
             self.matriz = [[1.0 if i == j else 0.0 for j in range(3)] for i in range(3)]
 
     # c) Método para sumar dos matrices
+    # se debe sobrecargar +, - ==
     def sumar(self, m):
         if self.n != m.n:
             raise ValueError("❌ Las matrices deben tener el mismo tamaño")

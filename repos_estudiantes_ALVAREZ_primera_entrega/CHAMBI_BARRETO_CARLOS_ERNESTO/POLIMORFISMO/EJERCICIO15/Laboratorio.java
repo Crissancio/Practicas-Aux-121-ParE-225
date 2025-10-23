@@ -20,6 +20,8 @@ public class Laboratorio {
             }
         }
     }
+
+    // LOS METODO SE DEBEN LLAMAR INFORMACION()
     public void mostrarEstado(){
         System.out.println("Laboratorio: " + nombre);
         for(Ordenador o : ordenadores){
@@ -47,16 +49,5 @@ public class Laboratorio {
             }
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
+    // SIN METODO PARA PASAR COMPUTADORAS ENTRE LABORATORIO
 }

@@ -1,5 +1,6 @@
 # a) Class
 class Celular:
+    # SE DEBE SOBRECARGAR EL OPERADOR
     # a) 
     def __init__(self,nroTel,dueño,espacio,ram,nroApp):
         self.nroTel=nroTel
@@ -8,7 +9,8 @@ class Celular:
         self.ram=ram
         self.nroApp=nroApp
 
-    # b) 
+    # b)
+    # SE DEBE SOBRECARGAR LOS OPERADORES ++ - + 
     def aumentarApps(self):
         self.nroApp+=10
 

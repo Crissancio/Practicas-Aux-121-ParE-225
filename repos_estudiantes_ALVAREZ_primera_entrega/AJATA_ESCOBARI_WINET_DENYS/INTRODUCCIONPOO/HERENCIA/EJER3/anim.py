@@ -33,3 +33,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
+# LA ORIENTACION DE LAS FLECHAS DEL DIAGRAMA ESTAN MAL

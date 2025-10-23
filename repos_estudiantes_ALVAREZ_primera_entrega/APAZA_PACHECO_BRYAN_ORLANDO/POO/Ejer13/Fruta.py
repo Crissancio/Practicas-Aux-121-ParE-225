@@ -36,6 +36,7 @@ fruta_mas_vitaminas=max(frutas,key=lambda f:f.nroVitaminas)
 print("Fruta con más vitaminas:",fruta_mas_vitaminas.nombre)
 
 # c) 
+# SE DEBE BUSCAR A LA FRUTA X
 print("Vitaminas de Kiwi:",f1.v)
 
 # d) Cuantas v ejemplo C

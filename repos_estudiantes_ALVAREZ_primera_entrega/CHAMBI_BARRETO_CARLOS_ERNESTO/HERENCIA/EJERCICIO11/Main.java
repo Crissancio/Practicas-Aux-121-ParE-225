@@ -2,6 +2,7 @@ package HERENCIA.EJERCICIO11;
 
 public class Main {
     public static void main(String[] args){
+        // FALTAN ATRIBUTOS EN CLASES PERSONA POLICIA Y EMPLEADO
         JefePolicia j1 = new JefePolicia("Carlos", "JEFE DE OPERACIONES", "capitan", "P5678", 35, 5000);
         JefePolicia j2 = new JefePolicia("Maria", "JEFA DE LOGISTICA", "Teniente Coronel", "P56723", 40, 6000);
         //mostrar sus datos

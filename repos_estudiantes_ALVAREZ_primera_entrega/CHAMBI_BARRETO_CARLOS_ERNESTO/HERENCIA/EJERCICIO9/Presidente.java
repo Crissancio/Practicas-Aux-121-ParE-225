@@ -9,8 +9,9 @@ public class Presidente extends Politico{
         this.nombre = nombre;
         this.apellido = apellido;
         this.partido = partido;
-
     }
+
+    // FALTA SOBRECARGA DEL OPERADOR 
     public String getNombre(){
         return nombre;
     }

@@ -17,6 +17,7 @@ class Parada:
         for i in range(self.nroAutos):
             print("Modelo:",self.autos[i][0],"Conductor:",self.autos[i][1])
 
+    # LOS METODOS PARA ADICIONAR DEBEN LLAMARSE IGUAL
     # c) 
     def adicionar(self,x):
         if self.nroAdmins<10:

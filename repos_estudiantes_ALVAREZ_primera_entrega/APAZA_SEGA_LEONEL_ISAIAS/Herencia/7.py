@@ -13,6 +13,8 @@ class Estudiante(Persona):
 class Docente(Persona):
     pass
 
+# FALTA LA CLASE DOCENTE Y ATRIUBUTOS DE OTRAS CLASES
+
 # Ejemplo
 e1 = Estudiante("Luis", 20)
 e2 = Estudiante("María", 22)
